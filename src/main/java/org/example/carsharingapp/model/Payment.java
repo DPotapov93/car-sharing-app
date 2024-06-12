@@ -1,13 +1,16 @@
 package org.example.carsharingapp.model;
 
-import jakarta.persistence.*;
-import lombok.Data;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import java.math.BigDecimal;
 import java.net.URL;
+import lombok.Data;
 
 @Data
-@Table(name = "payents")
+@Table(name = "payments")
 @Entity
 public class Payment {
     @Id
@@ -19,7 +22,6 @@ public class Payment {
     private URL sessionUrl;
     private String sessionId;
     private BigDecimal amountToPay;
-
 
     public enum Status {
         PENDING,

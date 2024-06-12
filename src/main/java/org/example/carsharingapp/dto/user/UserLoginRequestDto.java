@@ -1,4 +1,4 @@
-package org.example.carsharingapp.dto;
+package org.example.carsharingapp.dto.user;
 
 public record UserLoginRequestDto(
         String email,

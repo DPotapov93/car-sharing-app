@@ -1,4 +1,4 @@
-package org.example.carsharingapp.dto;
+package org.example.carsharingapp.dto.user;
 
 import org.example.carsharingapp.model.User;
 
